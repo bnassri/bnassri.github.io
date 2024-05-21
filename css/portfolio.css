@@ -20,7 +20,7 @@ body.fade-out {
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    font-family: 'Sans Serif Collection' ; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -174,7 +174,7 @@ footer {
 
 /***** VIDEO STYLING *****/
 /* Formatting for background video */
-#Typing_Video {
+#Trippy_Video {
     position: fixed; /* This fixes the video to the page */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
