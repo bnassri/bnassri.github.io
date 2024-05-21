@@ -1,7 +1,16 @@
 /***** GENERAL STYLING *****/
+/*Will affect the whole document*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Body */
 body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+    opacity: 1; /* This and transition affect the page loading fade in effect */
+    transition: 3s opacity; /* This causes a 3 second fade in */
+    overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
+    user-select: none;
 }
 
 /* Heading 1 elements */
