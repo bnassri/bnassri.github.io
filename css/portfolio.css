@@ -233,6 +233,7 @@ footer {
 /***** END OF TABLE STYLING *****/
 
 /***** CONTACT FORM STYLING *****/
+
 /* Button used to open the contact form - fixed at the bottom of the page */
 .Pop_Up_Button {
     position: fixed; /* The element is positioned relative to the viewport and stays in the same location no matter what */
@@ -284,15 +285,15 @@ footer {
     background-color: white;
 }
 
-    /* Input fields */
-    .form-container input[type=text] {
-        width: 100%; /* The input boxes completely fill the width of the form-container */
-        padding: .93vw; /* Adds padding to the input boxes */
-        margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
-        border: none; /* Removes the border from the input boxes */
-        background: Gainsboro; /* Sets the background color of the input boxes */
-        font-size: 1vw; /* Relative font sizing based on the width of the viewport */
-    }
+/* Input fields */
+.form-container input[type=text] {
+    width: 100%; /* The input boxes completely fill the width of the form-container */
+    padding: .93vw; /* Adds padding to the input boxes */
+    margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
+    border: none; /* Removes the border from the input boxes */
+    background: Gainsboro; /* Sets the background color of the input boxes */
+    font-size: 1vw; /* Relative font sizing based on the width of the viewport */
+}
 
 /* General styling for all buttons */
 button {
@@ -306,14 +307,14 @@ button {
     height: auto; /* Allows the height to be resized depending on the content showing */
 }
 
-    /* Hover effect for contact and submit buttons */
-    button:hover, .form-container .btn:hover {
-        color: white; /* This makes the text in the buttons white when hovered over */
-        background-color: black; /* The background of the button changes to black when hovered over */
-        transition-duration: 1s; /* This makes the transition last 1 second */
-        -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
-        border-color: silver; /* The border turns silver when the button is hovered over */
-    }
+/* Hover effect for contact and submit buttons */
+button:hover, .form-container .btn:hover {
+    color: white; /* This makes the text in the buttons white when hovered over */
+    background-color: black; /* The background of the button changes to black when hovered over */
+    transition-duration: 1s; /* This makes the transition last 1 second */
+    -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
+    border-color: silver; /* The border turns silver when the button is hovered over */
+}
 
 /* Submit button */
 .form-container .btn {
@@ -330,101 +331,102 @@ button {
     border-color: gray;
 }
 
-    /* Styling for close button on hover */
-    .form-container .cancel:hover {
-        color: white;
-        background-color: darkred;
-        transition-duration: 1s;
-        -webkit-transition-duration: 1s;
-        border-color: black;
-        /***** END OF CONTACT FORM STYLING *****/
-        /***** Media Query Section *****/
-        /*Media rules for paragraph font size for different screen sizes*/
-        @media screen and (max-width: 527px) {
-            p {
-                font-size: 3.75vw;
-            }
-        }
+/* Styling for close button on hover */
+.form-container .cancel:hover {
+color: white;
+background-color: darkred;
+transition-duration: 1s;
+-webkit-transition-duration: 1s;
+border-color: black;
+/***** END OF CONTACT FORM STYLING *****/
 
-        @media screen and (min-width: 528px) and (max-width: 660px) {
-            p {
-                font-size: 3.5vw;
-            }
-        }
+/***** Media Query Section *****/
+/*Media rules for paragraph font size for different screen sizes*/
+@media screen and (max-width: 527px) {
+    p {
+        font-size: 3.75vw;
+    }
+}
 
-        @media screen and (min-width: 661px) and (max-width: 799px) {
-            p {
-                font-size: 2.75vw;
-            }
-        }
+@media screen and (min-width: 528px) and (max-width: 660px) {
+    p {
+        font-size: 3.5vw;
+    }
+}
 
-        @media screen and (min-width: 800px) and (max-width: 924px) {
-            p {
-                font-size: 2.5vw;
-            }
-        }
+@media screen and (min-width: 661px) and (max-width: 799px) {
+    p {
+        font-size: 2.75vw;
+    }
+}
 
-        @media screen and (min-width: 925px) and (max-width: 1050px) {
-            p {
-                font-size: 2.25vw;
-            }
-        }
+@media screen and (min-width: 800px) and (max-width: 924px) {
+    p {
+        font-size: 2.5vw;
+    }
+}
 
-        @media screen and (min-width: 1051px) and (max-width: 1310px) {
-            p {
-                font-size: 2vw;
-            }
-        }
+@media screen and (min-width: 925px) and (max-width: 1050px) {
+    p {
+        font-size: 2.25vw;
+    }
+}
 
-        @media screen and (min-width: 1311px) and (max-width: 1535px) {
-            p {
-                font-size: 1.75vw;
-            }
-        }
+@media screen and (min-width: 1051px) and (max-width: 1310px) {
+    p {
+        font-size: 2vw;
+    }
+}
 
-        @media screen and (min-width: 1536px) and (max-width: 2269px) {
-            p {
-                font-size: 1.5vw;
-            }
-        }
+@media screen and (min-width: 1311px) and (max-width: 1535px) {
+    p {
+        font-size: 1.75vw;
+    }
+}
 
-        @media screen and (min-width: 2270px) {
-            p {
-                font-size: 1.35vw;
-            }
-        }
-        /*Media rule for navbar links for different screen sizes*/
-        /* Screens 1080px and smaller will display navbar links equally distributed */
-        @media screen and (max-width: 1080px) {
-            .Navbar a {
-                width: 20%; /* This sets each navbar link to 1/5 of the navbar */
-                font-size: 2.5vw;
-            }
-        }
-        /* Media rules to enlarge the font of the white text for smaller screens */
-        @media screen and (max-width: 1080px) {
-            .quote {
-                font-size: 3.5vw;
-            }
+@media screen and (min-width: 1536px) and (max-width: 2269px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
 
-            .white-text {
-                font-size: 4.5vw;
-            }
-        }
-        /* Media rules to increase the size of the columns for larger screens */
-        @media screen and (min-width: 1725px) {
-            .Column_1 {
-                height: 550px;
-            }
+@media screen and (min-width: 2270px) {
+    p {
+        font-size: 1.35vw;
+    }
+}
+/*Media rule for navbar links for different screen sizes*/
+/* Screens 1080px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 1080px) {
+    .Navbar a {
+        width: 20%; /* This sets each navbar link to 1/5 of the navbar */
+        font-size: 2.5vw;
+    }
+}
+/* Media rules to enlarge the font of the white text for smaller screens */
+@media screen and (max-width: 1080px) {
+    .quote {
+        font-size: 3.5vw;
+    }
 
-            .Column_2 {
-                height: 550px;
-            }
-        }
-        /*Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column*/
-        @media screen and (min-width: 2000px) {
-            h1 {
-                margin-top: 0;
-            }
-        }
-        /***** End of Media Query Section *****/
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+/* Media rules to increase the size of the columns for larger screens */
+@media screen and (min-width: 1725px) {
+    .Column_1 {
+        height: 550px;
+    }
+
+    .Column_2 {
+        height: 550px;
+    }
+}
+/*Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column*/
+@media screen and (min-width: 2000px) {
+    h1 {
+        margin-top: 0;
+    }
+}
+/***** End of Media Query Section *****/
